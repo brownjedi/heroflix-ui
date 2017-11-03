@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ng serve",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200/#",
+            "webRoot": "${workspaceRoot}/client"
+        },
+        {
+            "name": "ng test",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:9876/debug.html",
+            "webRoot": "${workspaceRoot}/client"
+        },
+        {
+            "name": "ng e2e",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/client/node_modules/protractor/bin/protractor",
+            "protocol": "inspector",
+            "args": [
+                "${workspaceRoot}/client/protractor.conf.js"
+            ]
+        }
+    ]
+}
